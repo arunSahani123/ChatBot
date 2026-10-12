@@ -1,0 +1,114 @@
+.chatsection{
+    background-color: var(--background-color);
+    height: 100vh;
+    flex: 1;
+}
+.topsection{
+    width: 100%;
+    height: 75vh;
+    /* background-color: aquamarine; */
+}
+.bottomsection{
+    width: 100%;
+    height: 25vh;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.heading{
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2vmax;
+    text-align: center;
+
+}
+.heading span:nth-child(1){
+    font-size: 4em;
+    font-weight: 600;
+    background: linear-gradient(to right, #30CFD0 0%,rgb(103, 84, 84), #330867 100%);
+    background-clip: text;
+    color:transparent
+}
+.heading span:nth-child(2){
+    font-size: 2.7em;
+    font-weight: 600;
+    background: linear-gradient(to right, #266b34 0%,rgb(218, 237, 4), #f33f17 100%);
+    background-clip: text;
+    color:transparent
+}
+.heading span:nth-child(3){
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--color); 
+    background-clip: text;
+    
+    opacity: 0.8;
+}
+.bottomsection input{
+    width: 50%;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    background-color: var(--btn-background-color);
+    color:var(--btn-color);
+    padding: 20px;
+    font-size: 1.2em;
+}
+.sendbtn{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--btn-background-color);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.sendbtn:hover{
+    background-color: var(--hover-btn-background-color);
+}
+.sendbtn svg{
+    width: 30px;
+    height: 30px;
+    color: var(--btn-color);
+}
+.loader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.loader hr{
+    /* width: 100%; */
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--btn-background-color);
+    background: linear-gradient(to right,rgb(125, 218, 201),var(--background-color),rgb(125, 218, 201));
+    background-size: 800px 50px;
+    animation: animate 1s linear infinite;
+    
+}
+@keyframes animate{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 800px;
+    }
+}
+
+@media (max-width:800px){
+    .heading{
+        font-size: 0.7vmax;
+        
+        padding: 10px;
+    }
+}

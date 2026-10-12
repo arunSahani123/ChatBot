@@ -1,0 +1,62 @@
+.sidebar{
+    padding: 20px 10px;
+    /* width: auto; */
+    height: 100vh;
+    overflow: auto;
+    background-color:var(--background-color);
+    color:var(--color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    font-size: 20px;
+    scrollbar-width: none;
+}
+.sidebar svg{
+    width: 30px;
+    height: 30px;
+    color:var(--color);
+}
+#ham{
+    margin-left: 10px;
+}
+.newchat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgba(46, 47, 52, 0.689);
+    padding: 15px;
+    border-radius: 30px;
+
+}
+.recent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 30px;
+    
+}
+.recent:hover{
+    background-color: #c2c2c6;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color : #000;
+    /* color: #000; */
+}
+.recent svg:hover{
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+.newchat:hover{
+    background-color: #67676b;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+@media (max-width:600px){
+    .sidebar{
+        display: none;
+    }
+}

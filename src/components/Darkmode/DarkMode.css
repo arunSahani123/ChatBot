@@ -1,0 +1,22 @@
+.darkmodebtn{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--btn-background-color);
+    transition: all 0.5s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.darkmodebtn svg{
+    width: 30px;
+    height: 30px;
+    fill: var(--btn-color);
+}
+.darkmodebtn:hover{
+    background-color: var(--hover-btn-background-color);
+}
+
